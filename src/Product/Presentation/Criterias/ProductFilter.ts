@@ -5,7 +5,7 @@ class ProductFilter extends Filter {
   static readonly CATEGORY: string = 'category';
 
   getFields(): any {
-    return [ProductFilter.PRICE, ProductFilter.CATEGORY];
+    return [ProductFilter.CATEGORY];
   }
 
   getDefaultFilters(): any {

@@ -42,7 +42,6 @@ class ProductMongooseRepository
 
     void queryBuilder.populate('category');
     if (filter.has(ProductFilter.CATEGORY)) {
-      console.log('hola');
       const category = filter.get(ProductFilter.CATEGORY) as string;
       void queryBuilder.where({ category: category });
     }
